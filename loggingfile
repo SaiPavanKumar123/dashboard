@@ -1,0 +1,73 @@
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class HospitalLoggingConfig {
+
+    @Bean
+    public Logger dashboardControllerLogger() {
+        return LoggerFactory.getLogger(DashboardController.class);
+    }
+
+    @Bean
+    public Logger hospitalClaimControllerLogger() {
+        return LoggerFactory.getLogger(HospitalClaimController.class);
+    }
+
+    @Bean
+    public Logger hospitalLoginControllerLogger() {
+        return LoggerFactory.getLogger(HospitalLoginController.class);
+    }
+
+    @Bean
+    public Logger hospitalPaymentControllerLogger() {
+        return LoggerFactory.getLogger(HospitalPaymentController.class);
+    }
+
+    @Bean
+    public Logger packageControllerLogger() {
+        return LoggerFactory.getLogger(PackageController.class);
+    }
+
+    @Bean
+    public Logger proceduresControllerLogger() {
+        return LoggerFactory.getLogger(ProceduresController.class);
+    }
+
+   
+}
+
+
+
+
+
+
+
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class CustomerLoggingConfig {
+
+    @Bean
+    public Logger customerOptionsControllerLogger() {
+        return LoggerFactory.getLogger(DashboardController.class);
+    }
+
+    @Bean
+    public Logger insuranceClaimControllerLogger() {
+        return LoggerFactory.getLogger(HospitalClaimController.class);
+    }
+
+    @Bean
+    public Logger transactionControllerLogger() {
+        return LoggerFactory.getLogger(HospitalLoginController.class);
+    }
+   
+}
+
